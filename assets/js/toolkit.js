@@ -1,7 +1,7 @@
 ---
 
 ---
-
+/Users/billyphan/hackforla/hackforLAforkwebsite/assets/js/toolkit.js
 document.addEventListener("DOMContentLoaded", () => {
     const currentFilters = {projectStatus: [], practiceAreas: [], projectTools: [], projectResourceType: [], projectTechnologies: [], projectSource: [], projectContributors: []}
 
@@ -500,21 +500,6 @@ function tabFocusedKeyDownHandler(e) {
 	if ((event.key === "Enter" || event.key === "Spacebar" || event.key === " ") && document.activeElement.getAttribute("aria-label")) {
         document.activeElement.click()
     }
-}
-//test
-function displayNoResultsMessage(filterParams) {
-    document.querySelector(".no-results-message").innerHTML = `
-    <div>
-        <p>We couldn't find results for:</p>
-            ${noResultsMessageComponent(filterParams)}
-    </div>
-    <div>
-        <h3>Search Tips</h3>
-        <ul>
-            <li><p>Broaden your search by removing some of the filters</p></li>
-        </ul>
-    </div>
-    `
 }
 
 function noResultsMessageComponent(filterParams) {
