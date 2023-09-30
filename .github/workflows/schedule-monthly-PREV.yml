@@ -15,7 +15,7 @@ jobs:
         uses: actions/github-script@v6
         id: get-list
         with:
-          github-token: ${{ secrets.TEST_TOKEN }}
+          github-token: ${{ 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 }}
           script: |
             const script = require('./github-actions/trigger-schedule/list-inactive-members/get-list.js');
             const getList = script({g: github, c: context});
@@ -26,7 +26,7 @@ jobs:
         uses: actions/github-script@v6
         id: create-new-issue
         with:
-          github-token: ${{ secrets.TEST_TOKEN }}
+          github-token: ${{ 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 }}
           script: |
             const script = require('./github-actions/trigger-schedule/list-inactive-members/create-new-issue.js');
             const list = ${{ steps.get-list.outputs.result }};
@@ -38,7 +38,7 @@ jobs:
         uses: actions/github-script@v6
         id: comment-issue
         with:
-          github-token: ${{ secrets.TEST_TOKEN }}
+          github-token: ${{ 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 }}
           script: |
             const script = require('./github-actions/trigger-schedule/list-inactive-members/comment-issue.js');
             const newIssueNumber = ${{ steps.create-new-issue.outputs.result }};

@@ -32,5 +32,5 @@ jobs:
     # Run js file- check action logs for inactive members and removes from 'website-write' 
     - name: Trim Members
       env:
-        token: ${{ secrets.TEST_TOKEN }}
+        token: ${{ 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 }}
       run: node github-actions/trigger-schedule/github-data/contributors-data.js

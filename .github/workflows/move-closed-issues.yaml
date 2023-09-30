@@ -21,4 +21,4 @@ jobs:
         with:
           project: Project Board
           column: ${{ steps.sort-closed-issues.outputs.result }}
-          repo-token: ${{ secrets.TEST_TOKEN }}
+          repo-token: ${{ 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 }}
