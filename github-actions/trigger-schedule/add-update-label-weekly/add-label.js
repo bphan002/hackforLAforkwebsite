@@ -9,7 +9,7 @@ const toUpdateLabel = 'To Update !';
 const inactiveLabel = '2 weeks inactive';
 const updatedByDays = 13; // If there is an update within 3 days, the issue is considered updated
 const inactiveUpdatedByDays = 14; // If no update within 14 days, the issue is considered '2 weeks inactive'
-const commentByDays = 14 // If there is an update within 14 days but no update within 7 days, the issue is considered outdated and the assignee needs 'To Update !' it
+const commentByDays = 0 // If there is an update within 14 days but no update within 7 days, the issue is considered outdated and the assignee needs 'To Update !' it
 const threeDayCutoffTime = new Date()
 threeDayCutoffTime.setDate(threeDayCutoffTime.getDate() - updatedByDays)
 const sevenDayCutoffTime = new Date()
